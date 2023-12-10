@@ -317,6 +317,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2879113280604087452, guid: 07e021f315b42fd44abaa70fa6991343, type: 3}
+      propertyPath: m_Constraints
+      value: 56
+      objectReference: {fileID: 0}
     - target: {fileID: 3472802795886237083, guid: 07e021f315b42fd44abaa70fa6991343, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5
@@ -364,6 +368,10 @@ PrefabInstance:
     - target: {fileID: 6360212747514644602, guid: 07e021f315b42fd44abaa70fa6991343, type: 3}
       propertyPath: boostSpeed
       value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6360212747514644602, guid: 07e021f315b42fd44abaa70fa6991343, type: 3}
+      propertyPath: rotationSpeed
+      value: 250
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
