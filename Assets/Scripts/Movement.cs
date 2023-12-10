@@ -8,10 +8,12 @@ public class Movement : MonoBehaviour
     [SerializeField] float rotationSpeed = 1000f;
 
     Rigidbody rb;
+    AudioSource audioSource;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -25,6 +27,15 @@ public class Movement : MonoBehaviour
         if(Input.GetKey(KeyCode.W))
         {
             rb.AddRelativeForce(Vector3.up * boostSpeed * Time.deltaTime);
+            if(!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+
+        else
+        {
+            audioSource.Stop();
         }
     }
 
