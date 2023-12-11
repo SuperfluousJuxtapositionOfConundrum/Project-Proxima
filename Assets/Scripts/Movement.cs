@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {   
     [SerializeField] float boostSpeed = 1000f;
-    [SerializeField] float rotationSpeed = 1000f;
+    [SerializeField] float rotationThrust = 100f;
 
     Rigidbody rb;
     AudioSource audioSource;
@@ -43,12 +43,17 @@ public class Movement : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(Vector3.forward * rotationSpeed * Time.deltaTime);
+            ApplyRotation(rotationThrust);
         }
 
         else if(Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(Vector3.back * rotationSpeed * Time.deltaTime);
+            ApplyRotation(-rotationThrust);
         }
+    }
+
+    void ApplyRotation(float rpf) // rpf = rotation per frame
+    {
+        transform.Rotate(Vector3.forward * rpf * Time.deltaTime);
     }
 }
