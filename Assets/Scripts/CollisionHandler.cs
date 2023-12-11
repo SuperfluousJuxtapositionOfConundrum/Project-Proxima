@@ -14,19 +14,20 @@ public class CollisionHandler : MonoBehaviour
                 break;
 
             case "Finish":
-                Invoke("StartSuccessSequence", loadDelay);
+                StartSuccessSequence();
                 Debug.Log("YAAAAAY");
                 break;
 
             default:
-                Invoke("StartCrashSequence", loadDelay);
+                StartCrashSequence();
                 break;
         }
     }
 
     void StartCrashSequence()
-    {
-
+    {   
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.GetActiveScene(currentSceneIndex);
     }
 
     void StartSuccessSequence()
