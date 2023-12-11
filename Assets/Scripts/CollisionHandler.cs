@@ -1,17 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
+{   
+    [SerializeField] float loadDelay = 1f;
+
+    void OnCollisionEnter(Collision other)
     {
-        
+        switch(other.gameObject.tag)
+        {
+            case "Safe":
+                Debug.Log("I'm ok");
+                break;
+
+            case "Finish":
+                Invoke("StartSuccessSequence", loadDelay);
+                Debug.Log("YAAAAAY");
+                break;
+
+            default:
+                Invoke("StartCrashSequence", loadDelay);
+
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void StartCrashSequence()
+    {
+
+    }
+
+    void StartSuccessSequence()
     {
         
     }
