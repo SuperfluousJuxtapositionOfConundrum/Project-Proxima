@@ -20,7 +20,7 @@ public class CollisionHandler : MonoBehaviour
 
             default:
                 Invoke("StartCrashSequence", loadDelay);
-
+                break;
         }
     }
 
