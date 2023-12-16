@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {   
     [SerializeField] float boostSpeed = 1000f;
-    [SerializeField] float rotationThrust = 100f;
+    [SerializeField] float rotationThrust = 300f;
 
     Rigidbody rb;
     AudioSource audioSource;
