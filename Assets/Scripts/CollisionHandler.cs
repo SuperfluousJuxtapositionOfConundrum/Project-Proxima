@@ -27,7 +27,7 @@ public class CollisionHandler : MonoBehaviour
     void StartCrashSequence()
     {   
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.GetActiveScene(currentSceneIndex);
+        SceneManager.LoadScene(currentSceneIndex);
     }
 
     void StartSuccessSequence()
