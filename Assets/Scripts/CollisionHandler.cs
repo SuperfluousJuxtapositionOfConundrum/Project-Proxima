@@ -45,6 +45,7 @@ public class CollisionHandler : MonoBehaviour
     {   
         isTransitioning = true;
         movement.enabled = false;
+        audioSource.Stop();
         audioSource.PlayOneShot(crashSFX);
         Invoke("ReloadLevel", loadDelay);
     }
@@ -53,6 +54,7 @@ public class CollisionHandler : MonoBehaviour
     {   
         isTransitioning = true;
         movement.enabled = false;
+        audioSource.Stop();
         audioSource.PlayOneShot(successSFX);
         Invoke("LoadNextLevel", loadDelay);
     }
