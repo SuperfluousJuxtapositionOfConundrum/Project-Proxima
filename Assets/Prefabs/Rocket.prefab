@@ -605,6 +605,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boostSpeed: 1000
   rotationThrust: 250
+  mainBoosterParticles: {fileID: 5596533924500858291}
+  rightBoosterParticles: {fileID: 3803005870208850226}
+  leftBoosterParticles: {fileID: 5366370442565615805}
 --- !u!82 &2423767835258570519
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1577,6 +1580,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
+--- !u!198 &3803005870208850226 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 584678573886053986, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
+  m_PrefabInstance: {fileID: 4385326948893886288}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3920589669238117242 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 771087676723270698, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
@@ -1711,6 +1719,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 771087676723270698, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
   m_PrefabInstance: {fileID: 4783983255206829791}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &5366370442565615805 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 584678573886053986, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
+  m_PrefabInstance: {fileID: 4783983255206829791}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5698507625007630543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1776,6 +1789,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3553fd250eb92d4091bebde350c6739, type: 3}
+--- !u!198 &5596533924500858291 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198100719057022332, guid: a3553fd250eb92d4091bebde350c6739, type: 3}
+  m_PrefabInstance: {fileID: 5698507625007630543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5693860321283600379 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4940884351362868, guid: a3553fd250eb92d4091bebde350c6739, type: 3}

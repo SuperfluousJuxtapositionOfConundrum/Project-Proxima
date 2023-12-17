@@ -13,6 +13,7 @@ public class CollisionHandler : MonoBehaviour
     Movement movement;
 
     bool isTransitioning;
+    bool collisionDisabled;
 
     void Start()
     {
@@ -22,9 +23,14 @@ public class CollisionHandler : MonoBehaviour
         isTransitioning = false;
     }
 
+    void Update()
+    {
+        RespondToDebugKeys();
+    }
+
     void OnCollisionEnter(Collision other)
     {   
-        if(isTransitioning) { return; }
+        if(isTransitioning || collisionDisabled) { return; }
 
         switch(other.gameObject.tag)
         {
@@ -77,5 +83,18 @@ public class CollisionHandler : MonoBehaviour
         }
 
         SceneManager.LoadScene(nextSceneIndex);
+    }
+
+    void RespondToDebugKeys()
+    {
+        if(Input.GetKeyDown(KeyCode.L))
+        {
+            LoadNextLevel();
+        }
+
+        if(Input.GetKeyDown(KeyCode.C))
+        {
+            collisionDisabled = !collisionDisabled; // to toggle collision
+        }
     }
 }
