@@ -27,12 +27,10 @@ public class CollisionHandler : MonoBehaviour
         switch(other.gameObject.tag)
         {
             case "Safe":
-                Debug.Log("I'm ok");
                 break;
 
             case "Finish":
                 StartSuccessSequence();
-                Debug.Log("YAAAAAY");
                 break;
 
             default:
