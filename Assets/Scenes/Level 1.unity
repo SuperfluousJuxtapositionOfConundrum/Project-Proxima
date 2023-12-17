@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!198 &257148201 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5596533924500858291, guid: 07e021f315b42fd44abaa70fa6991343, type: 3}
+  m_PrefabInstance: {fileID: 4174079248822481497}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,6 +222,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!198 &810015388 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5366370442565615805, guid: 07e021f315b42fd44abaa70fa6991343, type: 3}
+  m_PrefabInstance: {fileID: 4174079248822481497}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,6 +380,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f59153381727fe44b4fefc27a560f3d, type: 3}
+--- !u!198 &1892825813 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3803005870208850226, guid: 07e021f315b42fd44abaa70fa6991343, type: 3}
+  m_PrefabInstance: {fileID: 4174079248822481497}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4117369955330685748
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -479,6 +494,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocket
       objectReference: {fileID: 0}
+    - target: {fileID: 6360212747514644602, guid: 07e021f315b42fd44abaa70fa6991343, type: 3}
+      propertyPath: leftBoosterParticles
+      value: 
+      objectReference: {fileID: 810015388}
+    - target: {fileID: 6360212747514644602, guid: 07e021f315b42fd44abaa70fa6991343, type: 3}
+      propertyPath: mainBoosterParticles
+      value: 
+      objectReference: {fileID: 257148201}
+    - target: {fileID: 6360212747514644602, guid: 07e021f315b42fd44abaa70fa6991343, type: 3}
+      propertyPath: rightBoosterParticles
+      value: 
+      objectReference: {fileID: 1892825813}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -716,6 +716,8 @@ MonoBehaviour:
   loadDelay: 2
   crashSFX: {fileID: 8300000, guid: 926f0422a58ef344194e7dd1ed7f4f15, type: 3}
   successSFX: {fileID: 8300000, guid: 32e3d22a0f7e4f441bdfc3c087505eeb, type: 3}
+  crashParticles: {fileID: 4314346870779714303}
+  successParticles: {fileID: 4568864986177098669}
 --- !u!1 &4699231664041874447
 GameObject:
   m_ObjectHideFlags: 0
@@ -1513,6 +1515,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4436899185823514, guid: ab79a37535b979f48b6de56e3a0a5cb0, type: 3}
   m_PrefabInstance: {fileID: 4116159991862694975}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &4314346870779714303 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198204746014789312, guid: ab79a37535b979f48b6de56e3a0a5cb0, type: 3}
+  m_PrefabInstance: {fileID: 4116159991862694975}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4385326948893886288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1635,6 +1642,11 @@ PrefabInstance:
 --- !u!4 &4443049561081908347 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4100699973242056, guid: 62198a3a5dbb64a4f9e1618929224faa, type: 3}
+  m_PrefabInstance: {fileID: 4442365185738555571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4568864986177098669 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198631066050499358, guid: 62198a3a5dbb64a4f9e1618929224faa, type: 3}
   m_PrefabInstance: {fileID: 4442365185738555571}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4783983255206829791
