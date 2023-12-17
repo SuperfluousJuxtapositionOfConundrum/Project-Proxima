@@ -10,15 +10,20 @@ public class CollisionHandler : MonoBehaviour
     AudioSource audioSource;
     Movement movement;
 
+    bool isTransitioning;
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         movement = GetComponent<Movement>();
         movement.enabled = true;
+        isTransitioning = false;
     }
 
     void OnCollisionEnter(Collision other)
-    {
+    {   
+        if(isTransitioning) { return; }
+
         switch(other.gameObject.tag)
         {
             case "Safe":
@@ -38,13 +43,15 @@ public class CollisionHandler : MonoBehaviour
 
     void StartCrashSequence()
     {   
+        isTransitioning = true;
         movement.enabled = false;
         audioSource.PlayOneShot(crashSFX);
         Invoke("ReloadLevel", loadDelay);
     }
 
     void StartSuccessSequence()
-    {
+    {   
+        isTransitioning = true;
         movement.enabled = false;
         audioSource.PlayOneShot(successSFX);
         Invoke("LoadNextLevel", loadDelay);
@@ -62,7 +69,7 @@ public class CollisionHandler : MonoBehaviour
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
         if(nextSceneIndex == SceneManager.sceneCountInBuildSettings)
         {
-            SceneManager.LoadScene(0);
+            nextSceneIndex = 0;
         }
 
         SceneManager.LoadScene(nextSceneIndex);
