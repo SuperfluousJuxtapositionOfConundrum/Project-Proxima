@@ -983,7 +983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementVector: {x: 0, y: 4.15, z: 0}
   movementFactor: 0
-  period: 3
+  period: 4
 --- !u!1001 &1772352862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1163,7 +1163,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5493330176516295183, guid: 5f36c95d91b6f9e478d6beb0bb53fa57, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.6792002
+      value: 2.75
       objectReference: {fileID: 0}
     - target: {fileID: 5493330176516295183, guid: 5f36c95d91b6f9e478d6beb0bb53fa57, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1171,7 +1171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5493330176516295183, guid: 5f36c95d91b6f9e478d6beb0bb53fa57, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.35
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 5493330176516295183, guid: 5f36c95d91b6f9e478d6beb0bb53fa57, type: 3}
       propertyPath: m_LocalPosition.z
